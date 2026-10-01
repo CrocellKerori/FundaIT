@@ -25,15 +25,71 @@ body{
 }
 
 .model_containner{
-    width: 70vw;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
 }
 model-viewer{
     width: 100%;
     height: 100%;
 }
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.button_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn{
+    position: relative;
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    width: 19rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.75s;
+    z-index: 2;
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent);
+    clip-path: circle(0% at 50% 50%);
+    transition: 0.75s;
+    z-index: -1;
+}
+
+.btn:hover::after{
+    clip-path: circle(100% at 50% 50%);
+}
+
+.btn:hover{
+    color: var(--ice);
+    box-shadow: 0 0 10px var(--accent),
+    0 0 50px var(--accent)
+}
