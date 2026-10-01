@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sriracha&display=swap');
+:root { --navy: #06162f; 
+    --blue: #0a2757; 
+    --ice: #eaf4ff; 
+    --muted: #9ab2d3; 
+    --accent: #64d5ff; }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: 
+    hidden; 
+    color: var(--ice); 
+    font-family: 'DM Sans', Arial, sans-serif; 
+    background: radial-gradient(circle at 17% 72%, #0a3970 0, transparent 30%),
+     radial-gradient(circle at 87% 18%, #123d76 0, 
+     transparent 28%), 
+     var(--navy); 
+    
+}
+
+.model_containner{
+    width: 70vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+model-viewer{
+    width: 100%;
+    height: 100%;
+}
+
