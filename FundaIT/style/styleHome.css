@@ -51,13 +51,6 @@ header {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
 }
 
-.logo {
-  margin-right: auto; 
-  color: var(--accent);
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-}
-
 .navbar a {
   position: relative;
   color: var(--ice);
@@ -99,6 +92,7 @@ header {
     width: 60vw;
     height: 50vh;
     margin: 0 auto;
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +163,7 @@ model-viewer{
 footer{
     width: 100%;
     height: 150px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background: linear-gradient(to right, var(--navy), var(--blue), var(--muted));
     border-top: 1px solid rgba(79, 195, 247, 0.25);
@@ -178,4 +172,35 @@ footer{
     border-top-left-radius: 125px;
     font-size: 1.2rem;
     line-height: 1.5rem;
+}
+
+
+.footer_left{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.footer_right{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: right;
+}
+
+.footer_right h2{
+    font-size: 1.7rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-right: 190px;
+}
+
+.footer_right ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: var(--ice);
+    text-shadow: 0 0 5px var(--accent);
 }
